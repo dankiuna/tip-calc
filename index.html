@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            #tipAmountContainer { display: none }
+            [type=radio] { opacity: .5; display: none }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                        <h1 id="title">Calc</h1>
+                        <div id="tipAmountContainer">
+                            <h4 id="tipAmount"></h4>
+                        </div>
+                        <form>
+                            <div class="form-group">
+                                    <label for="billAmount">Bill Amount</label>
+                                    <input type="number" class="form-control" id="billAmount" placeholder="Bill Amount">
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input radio" type="radio" name="tip" id="thirty" value="0.3">
+                                    <label class="form-check-label btn" for="thirty">Outstanding</label>
+                                </div>
+
+
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input radio" type="radio" name="tip" id="twenty" value="0.2">
+                                        <label class="form-check-label btn" for="twenty">Good</label>
+                                    </div>
+
+
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input radio" type="radio" name="tip" id="fifteen" value="0.15">
+                                    <label class="form-check-label btn" for="fifteen">It was OK</label>
+                                </div>
+
+
+                                <div class="form-check form-check-inline">
+                                        <input class="form-check-input radio" type="radio" name="tip" id="ten" value="0.1">
+                                        <label class="form-check-label btn" for="ten">Bad</label>
+                                    </div>
+
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input radio" type="radio" name="tip" id="five" value="0.05">
+                                    <label class="form-check-label btn " for="five">Terrible</label>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                            <button type="button" id="calcTip" class="btn btn-primary">Calculate</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="calc.js"></script>
+    </body>
+</html>
