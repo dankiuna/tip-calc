@@ -20,8 +20,14 @@ function calcTip () {
 
     let tip = billAmnt * p
 
-    $('#tipAmountContainer').show();
-    $('#tipAmountContainer > #tipAmount').removeClass().addClass('alert alert-success').text('You should tip $' + tip.toFixed(2) )
+    if( p == 0 ) {
+        $('#tipAmountContainer').show();
+        $('#tipAmountContainer > #tipAmount').removeClass().addClass('alert alert-primary').text('You did not select quality of service.' )    
+    } else {
+        $('#tipAmountContainer').show();
+        $('#tipAmountContainer > #tipAmount').removeClass().addClass('alert alert-success').text('You should tip $' + tip.toFixed(2) )    
+    }
+
 }
 
 function styleRadio(clicked) {
